@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Customer Feedback</h2>
+        <div class="form-wrapper">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="Review from" value="Katpadi Branch">
+
+                <input type="hidden" name="access_key" value="b5aed1b3-cec1-4232-a86c-1288782d7f9c">
+                <div>
+                    <label for="name">Customer Name *</label>
+                    <input type="text" name="Customer Name" placeholder="Enter Your Name" id="name" required>
+                </div>
+                <div>
+                    <label for="phn">Phone Number *</label>
+                    <input type="number" name="Phone Number" placeholder="Enter Your Phone Number" id="phn" required>
+                </div>
+
+                <div>
+                    <label for="atn">Attender Name *</label>
+                    <input type="text" name="Attender Name" placeholder="Enter Attender Name" id="atn" required>
+                </div>
+
+                <div class="stars">
+                    <label for="star">Rate Our Food *</label>
+                    <div class="star-rating" data-rating="0" id="star">
+                        <span class="star" data-rating="1">&#9733</span>
+                        <span class="star" data-rating="2">&#9733</span>
+                        <span class="star" data-rating="3">&#9733</span>
+                        <span class="star" data-rating="4">&#9733</span>
+                        <span class="star" data-rating="5">&#9733</span>
+                    </div>
+                    <p class="star-comment">Providing rating to uplift us</p>
+                    <input type="text" name="Rating" id="star-input"  required>
+                    
+                </div>
+
+                <div>
+                    <label for="file">Upload Image *</label>
+                    <input type="file" name="file" accept='image/*'  id="file" style="border: 0; margin-top: 0.6rem; height: auto;" required>
+                </div>
+
+                <div>
+                    <label for="text">Your Review *</label>
+                    <textarea name="Review" id="text" rows="5" style="resize: none;" required></textarea>
+                </div>
+
+                <input type="submit" class="btn">
+            </form>
+
+        </div>
+    </div>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
