@@ -91,6 +91,9 @@ textarea{
     form div input{
         width: 80vw;
     }
+    h2{
+        font-size: 1.9rem;
+    }
 }
 @media screen and (max-width: 375px) {
     form div input{
@@ -98,6 +101,9 @@ textarea{
     }
     .container{
         padding: 1rem;
+    }
+    h2{
+        font-size: 1.8rem;
     }
 }
 @media screen and (max-width: 320px) {
